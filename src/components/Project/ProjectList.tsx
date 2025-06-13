@@ -3,39 +3,60 @@ import { ProjectCard } from "./ProjectCard"
 export const ProjectList = () => {
   return (
     <div className="flex flex-col gap-y-6">
-
       <ProjectCard
-        title="LearnSphere – AI-Powered Educational Platform"
-        desc={<p>Built an AI-first platform that automates <strong>grading, scheduling, and performance analytics</strong> for educators. Integrated <strong>Google APIs (Calendar, Gmail, Sheets)</strong> with <strong>OAuth 2.0</strong>, deployed on GCP Cloud Run.</p>}
-        githubLink="https://github.com/anshul-jain-devx108/LearnSphere---AI-Powered-Educational-Platform-"
-        liveLink="https://learn-sphere-ai-powered-educational-platform.vercel.app/"
-        techStack={["MERN", "Google Cloud", "OAuth 2.0", "Firebase", "Tailwind", "Framer Motion"]}
-      />
-
-      <ProjectCard
-        title="ChatterAI – Real-Time Chat App with Gemini AI"
-        desc={<p>A production-ready MERN chat app with <strong>real-time messaging</strong>, <strong>JWT auth</strong>, and <strong>Redis sessions</strong>. Integrated <strong>Gemini AI</strong> and LangChain for <strong>smart replies with short-term memory</strong>.</p>}
-        githubLink="https://github.com/bhanushakya2004/GenAI-Chatapp"
-        liveLink="https://gen-ai-chatapp.vercel.app/login"
-        techStack={["MERN", "Socket.io", "Redis", "JWT", "LangChain", "Google Gemini"]}
-      />
-
-      <ProjectCard
-        title="ThinkTogether – AI-Powered Brainstorming Assistant"
-        desc={<p>Developed a platform that lets users <strong>ideate, refine, and expand ideas</strong> using GenAI agents (LangChain + Gemini). Features <strong>smart idea clustering</strong>, feedback loops, and a clean Streamlit UI.</p>}
+        title="ThinkTogether – AI-Powered Collaboration Platform"
+        desc={
+          <p>
+            Architected full-stack real-time messaging application with <strong>LangChain</strong> for intelligent conversations. 
+            Enabled <strong>WebSocket</strong>, <strong>JWT auth</strong>, <strong>Redis memory</strong> for session persistence, and 
+            integrated <strong>AI-enhanced messaging</strong> in a dynamic React UI.
+          </p>
+        }
         githubLink="https://github.com/bhanushakya2004/ThinkTogether"
         liveLink="https://thinktogether.streamlit.app"
-        techStack={["Python", "Streamlit", "LangChain", "Gemini", "OpenRouter"]}
+        techStack={["LangChain", "React.js", "Redis", "JWT", "WebSockets", "Node.js"]}
+      />
+      
+      <ProjectCard
+        title="LearnSphere – AI-Driven Educational Management System"
+        desc={
+          <p>
+            Developed an AI-powered platform automating student evaluation using <strong>Gemini API</strong>. Integrated <strong>Google Calendar</strong>, 
+            <strong>Gmail APIs</strong>, and <strong>OAuth 2.0</strong>. Designed with <strong>microservices in Node.js</strong> and deployed via <strong>Cloud Run</strong>, 
+            cutting educator effort by 40%.
+          </p>
+        }
+        githubLink="https://github.com/anshul-jain-devx108/LearnSphere---AI-Powered-Educational-Platform-"
+        liveLink="https://learn-sphere-ai-powered-educational-platform.vercel.app/"
+        techStack={["MERN", "Gemini API", "OAuth 2.0", "Google APIs", "Cloud Run", "Microservices"]}
       />
 
       <ProjectCard
-        title="Cold Email Generator Pro – AI Career Tool"
-        desc={<p>A professional AI tool that generates <strong>personalized cold emails</strong> for job applications. Features <strong>resume parsing</strong>, <strong>job description analysis</strong>, and <strong>Gemini-based email generation</strong>.</p>}
+        title="Cold Email Generator Pro – Personalized Outreach Tool"
+        desc={
+          <p>
+            Built an AI-based tool for generating personalized emails from job descriptions and resumes. Used <strong>LangChain</strong>, 
+            <strong>Groq API</strong>, <strong>Streamlit</strong> for parsing, analysis, and content generation. Supports <strong>PDF upload</strong> 
+            and works with diverse job platforms.
+          </p>
+        }
         githubLink="https://github.com/bhanushakya2004/Cold-Email-Generator-Pro"
-        liveLink="https://coldemailgenpro.streamlit.app"
-        techStack={["LangChain", "Streamlit", "Gemini", "OpenRouter", "Python"]}
+        liveLink="https://cold-email-generator-pro.streamlit.app/"
+        techStack={["LangChain", "Groq API", "Streamlit", "Python", "PDF Parsing"]}
       />
 
+      <ProjectCard
+        title="NewsBot – Intelligent News Research Assistant"
+        desc={
+          <p>
+            AI-powered assistant that extracts and analyzes news from live sources using <strong>LangChain</strong> and <strong>OpenRouter</strong>. 
+            Performs <strong>vector similarity search via FAISS</strong> and generates insights with citations in a <strong>Streamlit chat UI</strong>.
+          </p>
+        }
+        githubLink="https://github.com/bhanushakya2004/NewsBot-AI-News-Research-Assistant"
+        liveLink="https://newsbot-intelligent-news.streamlit.app/"
+        techStack={["LangChain", "OpenRouter", "FAISS", "Streamlit", "Python"]}
+      />
     </div>
   )
 }
